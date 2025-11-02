@@ -6,7 +6,12 @@ import { SkillCard } from "../../components/SkillCard/SkillCard";
 import { styles } from "./About.styles";
 import { useBottomTabBarHeight } from "@react-navigation/bottom-tabs";
 
-import { FontAwesome5, Fontisto } from "@expo/vector-icons";
+import {
+  Feather,
+  FontAwesome5,
+  Fontisto,
+  MaterialCommunityIcons,
+} from "@expo/vector-icons";
 
 export const About = () => {
   const tabBarHeight = useBottomTabBarHeight();
@@ -72,6 +77,17 @@ export const About = () => {
 
         <SkillCard
           icon={
+            <MaterialCommunityIcons
+              name="language-typescript"
+              size={styles.icon.fontSize}
+              color={styles.icon.color}
+            />
+          }
+          name="Typescript"
+        />
+
+        <SkillCard
+          icon={
             <FontAwesome5
               name="react"
               size={styles.icon.fontSize}
@@ -90,6 +106,28 @@ export const About = () => {
             />
           }
           name="Node.js"
+        />
+
+        <SkillCard
+          icon={
+            <Feather
+              name="git-merge"
+              size={styles.icon.fontSize}
+              color={styles.icon.color}
+            />
+          }
+          name="Git"
+        />
+
+        <SkillCard
+          icon={
+            <Feather
+              name="github"
+              size={styles.icon.fontSize}
+              color={styles.icon.color}
+            />
+          }
+          name="Github"
         />
       </View>
 
