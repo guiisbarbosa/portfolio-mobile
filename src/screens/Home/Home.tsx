@@ -2,6 +2,7 @@ import React from "react";
 import { View, Linking } from "react-native";
 
 import { styles } from "./Home.styles";
+
 import { Profile } from "../../components/Profile/Profile";
 import { Button } from "../../components/Button/Button";
 
