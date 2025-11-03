@@ -17,4 +17,12 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: "center",
   },
+  connectContainer: {
+    alignItems: "center",
+    marginTop: 40,
+  },
+  connectButtonsContainer: {
+    flexDirection: "row",
+    gap: 20,
+  },
 });
